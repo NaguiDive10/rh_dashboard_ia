@@ -53,9 +53,20 @@ cd rh_dashboard_ia
 pip install -r requirements.txt
 ```
 
-3. Lancer l'application Streamlit :
+3. Générer les modèles (si absents) :
+
+```bash
+python train_models.py
+```
+Le script crée automatiquement le dossier models/ et enregistre deux fichiers : models/model_turnover.pkl & models/model_absenteisme.pkl
+
+4. Lancer l'application Streamlit :
 ```bash
 streamlit run dashboard.py
+```
+ou 
+```bash
+python -m streamlit run dashboard.py
 ```
 
 ## Modèles IA

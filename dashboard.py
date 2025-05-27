@@ -10,11 +10,9 @@ import os
 # Point de départ = dossier courant où se trouve le script Python
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Chemin vers le fichier dans le dossier `data/`
-DATA_PATH = os.path.join(BASE_DIR, "rh_data.csv")
 
 # Chemins relatifs
-DATA_PATH = os.path.join(BASE_DIR, "rh_data.csv")
+DATA_PATH = os.path.join(BASE_DIR,"data", "rh_data.csv")
 MODEL_TURNOVER_PATH = os.path.join(BASE_DIR, "models", "model_turnover.pkl")
 MODEL_ABS_PATH = os.path.join(BASE_DIR, "models", "model_absenteisme.pkl")
 SYNTH_PATH = os.path.join(BASE_DIR,"synthese_rh.txt")
